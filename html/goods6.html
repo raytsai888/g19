@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p 1</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="/css/goods.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h2 ><img class="logo" src="/image/logo.png" alt=""></h2>
+        </a>
+        <nav class="navigation">
+            <a href="introduce.html">關於我們</a>
+            <a href="member.html">會員</a>
+            <a href="shop.html"><ion-icon name="bag-handle"></ion-icon>商城</a>
+            <a href="cart.html"><ion-icon name="cart"></ion-icon>購物車</a>
+            <button  class="btnLogin-popup" onclick="document.getElementById('id01').style.display='block'" ><ion-icon name="person"></ion-icon></button>  
+            <button class="btnLogin-popup" onclick="document.getElementById('id02').style.display='block'"><ion-icon name="search"></ion-icon></button>
+
+        </nav>
+    </header> 
+
+<div id="id01" class="modal">
+    <form class="modal-content animate" method="post">
+    <div class="wrapper" >
+        <span onclick="document.getElementById('id01').style.display='none'" class="icon-close" title="Close Modal"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <h2>登入</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                    
+                <button type="submit" class="btnn">Login</button>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>註冊會員</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit" class="btnn">Login</button>
+            </form>
+        </div>
+    </div>
+    </form>
+</div>
+<script>
+    var modal = document.getElementById('id01');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<div id="id02" class="modal">
+        <form class="modal-content animate" method="post">
+        <div class="wrapper" >
+            <span onclick="document.getElementById('id02').style.display='none'" class="icon-close" title="Close Modal"><ion-icon name="close"></ion-icon></span>
+            <input  placeholder="Search.."  class="search">
+            <button class="btnLogin-popup"><ion-icon name="search"></ion-icon></button>
+            </div>
+        </div>
+        </form>
+</div>
+        <script>
+        var modal = document.getElementById('id02');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+
+<div class="flex-box">
+    <div class="left">
+        <div class="big-img">
+            <img src="/image/6.png">
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="url">首頁 > 商城 > 狗飼料</div>
+        <div class="pname">Herz </div>
+        <div class="ratings">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price">$569</div>
+        <div class="size">
+            <p>內容 :赫緻低溫烘焙犬糧</p>
+            <p>無穀火雞胸肉 / 澳洲羊肉 / 牛肉 5磅</p>
+        </div>
+        <div class="quantity">
+            <p>數量 :</p>
+            <input type="number" min="1" max="5" value="1">
+        </div>
+        <div class="btn-box">
+            <button class="cart-btn"><ion-icon name="cart"></ion-icon></button>
+            <button class="buy-btn"><ion-icon name="card-outline"></ion-icon></button>
+        </div>
+    </div>
+</div>
+<div class="card2">
+    <h1 >留言板</h1>
+        <div id="box"><em>user-1</em></div>
+        <div id="box"><em>user-2</em></div>
+        <div id="box"><em>user-3</em></div>
+            <input type="text" id="text"><br />
+            <input id="btn" class="btnn"" onclick="fnsubmit()" value="發表留言" />
+            <div>
+            <style>
+            
+            </style>
+        
+        
+            <div class="rating">
+                <span onclick="rate(5)">&#9734;</span>
+                <span onclick="rate(4)">&#9734;</span>
+                <span onclick="rate(3)">&#9734;</span>
+                <span onclick="rate(2)">&#9734;</span>
+                <span onclick="rate(1)">&#9734;</span>
+            </div>
+            <h2>評價星數：<span id="ratingValue">0</span> / 5</h2>
+        
+            <script>
+                function rate(value) {
+                    document.getElementById("ratingValue").textContent = value;
+                }
+            </script>
+        
+            
+
+        </div>
+        <br />
+</div>
+
+
+    <div class="footer">
+        <div class="col-1">
+            <h3>簡介</h3>
+            <a href="/html/member.html">會員</a>
+            <a href="/html/shop.html">商城</a>
+            <a href="/html/cart.html">購物車</a>
+            <a href="/html/member.html">客服</a>
+            <a href="/html/member.html">留言</a>
+        </div>
+      <div class="col-2">
+          <h3>地址</h3>
+          <p>桃園市中壢區<br>中北路200號</p> 
+      </div>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2670543338454!2d121.23957442121208!3d24.957027099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221439820707%3A0xba7fd116db19f050!2zMzIw5qGD5ZyS5biC5Lit5aOi5Y2A5Lit5YyX6LevMjAw6Jmf6LOH566h5qiT!5e0!3m2!1szh-TW!2stw!4v1684266805761!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</body>
+</html>
+</body>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p 1</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="/css/shop.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+        <h2 ><img class="logo" src="/image/logo.png" alt=""></h2>
+    </a>
+    <nav class="navigation">
+        <a href="introduce.html">關於我們</a>
+        <a href="member.html">會員</a>
+        <a href="shop.html"><ion-icon name="bag-handle"></ion-icon>商城</a>
+        <a href="cart.html"><ion-icon name="cart"></ion-icon>購物車</a>
+        <button  class="btnLogin-popup" onclick="document.getElementById('id01').style.display='block'" ><ion-icon name="person"></ion-icon></button>  
+        <button class="btnLogin-popup" onclick="document.getElementById('id02').style.display='block'"><ion-icon name="search"></ion-icon></button>
+
+    </nav>
+</header> 
+
+<div id="id01" class="modal">
+    <form class="modal-content animate" method="post">
+    <div class="wrapper" >
+        <span onclick="document.getElementById('id01').style.display='none'" class="icon-close" title="Close Modal"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <h2>登入</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                    
+                <button type="submit" class="btnn">Login</button>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>註冊會員</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit" class="btnn">Login</button>
+            </form>
+        </div>
+    </div>
+    </form>
+</div>
+<script>
+    var modal = document.getElementById('id01');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<div id="id02" class="modal">
+        <form class="modal-content animate" method="post">
+        <div class="wrapper" >
+            <span onclick="document.getElementById('id02').style.display='none'" class="icon-close" title="Close Modal"><ion-icon name="close"></ion-icon></span>
+            <input  placeholder="Search.."  class="search">
+            <button class="btnLogin-popup"><ion-icon name="search"></ion-icon></button>
+            </div>
+        </div>
+        </form>
+</div>
+        <script>
+        var modal = document.getElementById('id02');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+       <div class="row">
+        <div class="column">
+          <div class="card">
+            <img class="img" src="/image/WeChat Image_20230522185959.jpg" alt="Jane" style="width:80%">
+              <div class="container">     
+                <h2>李應祥</h2>
+                <p>&nbsp;&nbsp;&nbsp;</p>
+                <h4> 這次的分組專案中，我們充分的利用了每個成員的優勢，每個成員都很有效的互相合作，一起克服困難。這次經歷讓我學習了如何在團隊中有效的協調及溝通，從每次的討論及困境中，學會了如何在壓力下保持冷靜並解決衝突以及向對方訴說自己看法，獲得了許多寶貴的合作及成長經驗</h4>
+                
+            </div>
+          </div>
+        </div>
+  
+        <div class="column">
+          <div class="card">
+            <img class="img" src="/image/7.jpg" alt="Jane" style="width:80%">
+              <div class="container">
+                <h2>蔡睿哲</h2>
+                <p>&nbsp;&nbsp;&nbsp;</p>
+                <h4> 透過這次期末專題，讓我更了解了團隊合作的力量，團隊中一個人的力量是難以支撐的，需要透過成員能力上的互補，共同解決問題並進行創新，充分發揮每個成員擅長的領域以及才能。在此之中，我認為我的溝通和協調能力獲得了極大的提升，這是一個難忘且有價值的合作經驗，受益良多</h4>
+                
+            </div>
+          </div>
+        </div>
+  
+        <div class="column">
+          <div class="card">
+            <img class="img" src="/image/8.jpg" alt="Jane" style="width:80%">
+              <div class="container">
+                <h2>張瑋鐘</h2>
+                <p>&nbsp;&nbsp;&nbsp;</p>
+                <h4>本次分組對我來說是充滿挑戰和學習的旅程，在這次的合作中，我跟組員間建立了密切的合作關係，陌生到熟悉，互相分享知識另我十分享受，即使碰到專案或是技術上的困難，也能透過團隊努力迎刃而解，這次的合作讓我了解何謂集思廣益，並使我更加堅定了團隊合作的價值觀，團結力量大</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <img class="img" src="WeChat Image_20230522185959.jpg" alt="Jane" style="width:100%">
+                  <div class="container">     
+                    <h2>李應祥</h2>
+                    <p>&nbsp;&nbsp;&nbsp;</p>
+                    <h4> 這次的分組專案中，我們充分的利用了每個成員的優勢，每個成員都很有效的互相合作，一起克服困難。這次經歷讓我學習了如何在團隊中有效的協調及溝通，從每次的討論及困境中，學會了如何在壓力下保持冷靜並解決衝突以及向對方訴說自己看法，獲得了許多寶貴的合作及成長經驗</h4>
+                    
+                </div>
+              </div>
+            </div>
+      
+            <div class="column">
+              <div class="card">
+                <img class="img" src="7.jpg" alt="Jane" style="width:100%">
+                  <div class="container">
+                    <h2>蔡睿哲</h2>
+                    <p>&nbsp;&nbsp;&nbsp;</p>
+                    <h4> 透過這次期末專題，讓我更了解了團隊合作的力量，團隊中一個人的力量是難以支撐的，需要透過成員能力上的互補，共同解決問題並進行創新，充分發揮每個成員擅長的領域以及才能。在此之中，我認為我的溝通和協調能力獲得了極大的提升，這是一個難忘且有價值的合作經驗，受益良多</h4>
+                    
+                </div>
+              </div>
+            </div>
+      
+            <div class="column">
+              <div class="card">
+                <img class="img" src="8.jpg" alt="Jane" style="width:100%">
+                  <div class="container">
+                    <h2>張瑋鐘</h2>
+                    <p>&nbsp;&nbsp;&nbsp;</p>
+                    <h4>本次分組對我來說是充滿挑戰和學習的旅程，在這次的合作中，我跟組員間建立了密切的合作關係，陌生到熟悉，互相分享知識另我十分享受，即使碰到專案或是技術上的困難，也能透過團隊努力迎刃而解，這次的合作讓我了解何謂集思廣益，並使我更加堅定了團隊合作的價值觀，團結力量大</h4>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+      <div class="col-1">
+        <h3>簡介</h3>
+        <a href="/html/member.html">會員</a>
+        <a href="/html/shop.html">商城</a>
+        <a href="/html/cart.html">購物車</a>
+        <a href="/html/member.html">客服</a>
+        <a href="/html/member.html">留言</a>
+    </div>
+      <div class="col-2">
+          <h3>地址</h3>
+          <p>桃園市中壢區<br>中北路200號</p> 
+      </div>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2670543338454!2d121.23957442121208!3d24.957027099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221439820707%3A0xba7fd116db19f050!2zMzIw5qGD5ZyS5biC5Lit5aOi5Y2A5Lit5YyX6LevMjAw6Jmf6LOH566h5qiT!5e0!3m2!1szh-TW!2stw!4v1684266805761!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</body>
+</html>
+</body>
